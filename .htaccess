@@ -1,0 +1,11 @@
+# Batasi akses ke folder sensitif
+RedirectMatch 403 ^/config/.*$
+RedirectMatch 403 ^/helpers/.*$
+RedirectMatch 403 ^/includes/.*$
+RedirectMatch 403 ^/logs/.*$
+
+# Nonaktifkan directory listing
+Options -Indexes
+
+# Matikan pencarian tanda tangan server
+ServerSignature Off

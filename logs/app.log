@@ -1,0 +1,15 @@
+[2026-06-02 12:45:51] [INFO] [User ID: Guest] [IP: ::1] User 'NBFT' successfully registered as buyer.
+[2026-06-02 12:46:09] [INFO] [User ID: 5] [IP: ::1] User 'NBFT' logged in successfully. Role: buyer
+[2026-06-02 12:51:50] [INFO] [User ID: 5] [IP: ::1] User 'NBFT' logged out.
+[2026-06-02 12:52:02] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for username: 'admin'
+[2026-06-02 12:52:22] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for username: 'admin@mbt.com'
+[2026-06-02 12:52:55] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for username: 'admin@mbt.com'
+[2026-06-02 12:54:44] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for username: 'admin123'
+[2026-06-02 12:56:53] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for username: 'vendor_umkm'
+[2026-06-02 12:57:52] [INFO] [User ID: 5] [IP: ::1] User 'NBFT' logged in successfully. Role: buyer
+[2026-06-02 12:58:07] [INFO] [User ID: 5] [IP: ::1] User 'NBFT' logged out.
+[2026-06-02 12:58:33] [INFO] [User ID: 5] [IP: ::1] User 'NBFT' logged in successfully. Role: buyer
+[2026-06-02 13:03:35] [INFO] [User ID: 5] [IP: ::1] User 'NBFT' logged out.
+[2026-06-02 13:04:36] [INFO] [User ID: Guest] [IP: ::1] User 'fitri' successfully registered as wisatawan.
+[2026-06-02 13:04:52] [INFO] [User ID: 6] [IP: ::1] User 'fitri' logged in successfully. Role: wisatawan
+[2026-06-02 13:05:32] [INFO] [User ID: 6] [IP: ::1] User 'fitri' logged out.

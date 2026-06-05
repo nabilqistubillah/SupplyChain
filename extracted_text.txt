@@ -1,0 +1,286 @@
+PERANCANGAN PROTOTYPE APLIKASI
+
+DIGITAL SUPPLY CHAIN
+
+MBT (Madura Blue Tourism)
+
+Disusun Oleh:
+
+Fitri Aulia
+
+Tamara Adjuah
+
+Muslimah Qurniawati
+
+Nabil Qistubillah
+
+PROGRAM STUDI TEKNIK INFORMATIKA
+
+FAKULTAS TEKNIK
+
+UNIVERSITAS ISLAM MADURA
+
+PAMEKASAN
+
+TAHUN AKADEMIK 2026-2027
+
+DAFTAR ISI
+
+DAFTAR ISIi
+
+1. DESKRIPSI SISTEM1
+
+2. PERANCANGAN BASIS DATA1
+
+2.1 Tabel Users1
+
+2.2 Tabel Vendor_Profile1
+
+2.3 Tabel Categories1
+
+2.4 Tabel Products2
+
+2.5 Tabel Orders2
+
+2.6 Tabel Order_Details2
+
+2.7 Tabel Payments2
+
+2.8 Tabel Shipments3
+
+2.9 Tabel Reviews3
+
+3. PERANCANGAN ENTITY RELATIONSHIP DIAGRAM (ERD)3
+
+4. PERANCANGAN DFD (DATA FLOW DIAGRAM)4
+
+4.1. DFD Level 0 (Context Diagram)5
+
+4.2. DFD Level 1 (Proses Utama)6
+
+5. PERANCANGAN UI/UX7
+
+6. PERANCANGAN FITUR DAN MENU7
+
+6.1 Menu dan Fitur (User)7
+
+6.1.1 Menu Dashboard / Beranda7
+
+6.1.2 Menu Destinasi7
+
+6.1.3 Menu Statistik Pengunjung9
+
+6.1.4 Menu Profil9
+
+1. DESKRIPSI SISTEM
+
+MBT (Madura Blue Tourism) merupakan platform digital berbasis Business-to-Business (B2B) yang menghubungkan hotel dan restoran dengan vendor lokal seperti UMKM, petani, penyedia transportasi, serta penjual oleh-oleh khas Madura. Dengan slogan “Connecting Local Vendors to Global Tourism”, MBT bertujuan mendukung pengembangan pariwisata berkelanjutan melalui pemberdayaan ekonomi lokal dan digitalisasi rantai pasok sektor wisata.
+
+Melalui platform ini, proses pemesanan produk dan layanan lokal menjadi lebih mudah, cepat, dan terintegrasi. MBT diharapkan mampu meningkatkan kolaborasi antara industri pariwisata dan pelaku usaha lokal sehingga potensi wisata Madura dapat berkembang secara lebih kompetitif di tingkat nasional maupun global.
+
+2. PERANCANGAN BASIS DATA
+
+MBT (Madura Blue Tourism) merupakan platform digital berbasis Business-to-Business (B2B) yang menghubungkan hotel, restoran, dan pelaku industri wisata dengan vendor lokal seperti UMKM, petani, penyedia transportasi, serta penjual oleh-oleh khas Madura. Sistem ini dirancang untuk mendukung proses pengadaan produk dan layanan lokal secara terintegrasi.
+
+2.1 Tabel Users
+
+Menyimpan data seluruh pengguna sistem.
+
+2.2 Tabel Vendor_Profile
+
+Menyimpan informasi detail vendor lokal.
+
+2.3 Tabel Categories
+
+Menyimpan kategori produk.
+
+2.4 Tabel Products
+
+Menyimpan data produk atau layanan yang dijual oleh vendor lokal.
+
+2.5 Tabel Orders
+
+Menyimpan data transaksi pemesanan yang dilakukan oleh pengguna.
+
+2.6 Tabel Order_Details
+
+Menyimpan detail produk pada setiap transaksi pemesanan.
+
+2.7 Tabel Payments
+
+Menyimpan informasi pembayaran dari setiap transaksi.
+
+2.8 Tabel Shipments
+
+Menyimpan informasi pengiriman pesanan kepada pelanggan.
+
+2.9 Tabel Reviews
+
+Menyimpan ulasan dan penilaian pengguna terhadap vendor.
+
+3. PERANCANGAN ENTITY RELATIONSHIP DIAGRAM (ERD)
+
+Perancangan basis data dalam sistem ini divisualisasikan melalui diagram hubungan antar entitas (ERD) untuk menggambarkan struktur data dan relasi logika yang terjadi dalam aplikasi.
+
+Hubungan antar entitas dalam sistem informasi ini dirancang untuk mendukung ekosistem marketplace B2B antara vendor dan pembeli (hotel/restoran). Hubungan tersebut diatur sebagai berikut:
+
+- Users ke Vendor_Profile (One-to-One): Setiap pengguna dengan role 'vendor' memiliki satu profil bisnis yang mendetail untuk menyimpan informasi entitas usaha seperti nama bisnis dan rating.
+- Vendor_Profile ke Products (One-to-Many): Satu vendor dapat menyediakan dan menjual berbagai macam produk atau layanan kepada pembeli.
+- Categories ke Products (One-to-Many): Setiap produk dikelompokkan ke dalam satu kategori tertentu untuk memudahkan pencarian dan manajemen inventaris.
+- Users (Buyer) ke Orders (One-to-Many): Satu pengguna (dengan role hotel atau restoran) dapat melakukan banyak transaksi pesanan dalam waktu yang berbeda.
+- Orders ke Order_Details (One-to-Many): Satu nomor pesanan dapat mencakup rincian beberapa item produk yang berbeda dalam satu kali transaksi.
+- Products ke Order_Details (One-to-Many): Satu produk tertentu dapat muncul di berbagai rincian pesanan yang dibuat oleh pembeli yang berbeda-beda.
+- Orders ke Payments (One-to-One): Setiap transaksi pesanan terhubung dengan satu catatan pembayaran untuk memvalidasi status pelunasan (Bank Transfer, E-Wallet, atau Cash).
+- Orders ke Shipments (One-to-One): Setiap pesanan yang telah diproses memiliki satu data pengiriman yang memuat nomor resi, kurir, dan status logistik.
+- Orders & Vendor ke Reviews (One-to-Many): Setelah pesanan selesai, pembeli dapat memberikan ulasan yang terhubung ke spesifik pesanan dan profil vendor terkait untuk penilaian transparansi.
+Gambar 1 Entity Relationship Diagram
+
+4. PERANCANGAN DFD (DATA FLOW DIAGRAM)
+
+Aliran data pada sistem MBT (Madura Blue Tourism) dibagi berdasarkan level sistem untuk menggambarkan proses pertukaran data antara pengguna, sistem, dan basis data secara terstruktur. Sistem dirancang sebagai platform smart tourism dashboard yang mengintegrasikan informasi destinasi wisata dengan layanan pendukung lokal di sekitar destinasi wisata.
+
+4.1. DFD Level 0 (Context Diagram)
+
+Pada level ini, sistem MBT digambarkan sebagai satu proses utama yang berinteraksi dengan entitas eksternal.
+
+Gambar 2 DFD Level 0
+
+- Wisatawan / Pengunjung: Wisatawan mengirimkan permintaan eksplorasi destinasi, pencarian layanan wisata, serta permintaan statistik wisata kepada Sistem MBT. Sebagai output, wisatawan menerima informasi destinasi wisata, statistik lokal, rekomendasi transportasi, akomodasi, kuliner, dan informasi layanan pendukung wisata lainnya.
+- Vendor Lokal: Vendor lokal seperti UMKM, penyedia transportasi, pengelola penginapan, dan pelaku kuliner mengirimkan data layanan, informasi usaha, serta data produk wisata kepada Sistem MBT. Vendor menerima informasi status layanan, statistik keterlibatan wisata, dan validasi data layanan dari sistem.
+- Admin Sistem: Admin mengirimkan data pengelolaan destinasi wisata, validasi data vendor, pengelolaan statistik wisata, serta pembaruan informasi wisata ke dalam sistem. Sistem kemudian memberikan laporan data wisata, statistik pengunjung, dan monitoring ekosistem wisata kepada admin.
+4.2. DFD Level 1 (Proses Utama)
+
+Gambar 3 DFD Level 1
+
+- Proses 1.0 (Manajemen Destinasi): Admin menginput data destinasi wisata, informasi wisata, data wahana, dan statistik lokal ke dalam sistem. Data tersebut kemudian disimpan pada database destinasi dan ditampilkan kepada pengguna pada halaman eksplorasi wisata.
+- Proses 2.0 (Smart Tourism Network): Vendor lokal mengunggah data layanan wisata seperti transportasi, hotel, homestay, kuliner, pusat oleh-oleh, dan UMKM lokal. Sistem menyimpan data layanan pada database layanan wisata dan menampilkan rekomendasi layanan berdasarkan destinasi yang dipilih pengguna.
+- Proses 3.0 (Statistik Pengunjung): Sistem mengelola data jumlah pengunjung harian, bulanan, dan tahunan, serta segmentasi wisatawan berdasarkan kategori lokal, luar daerah, dan mancanegara. Data statistik kemudian ditampilkan dalam bentuk grafik dan dashboard monitoring wisata.
+- Proses 4.0 (Manajemen Pengguna): Pengguna melakukan registrasi, login, dan pengelolaan profil akun pada sistem. Sistem memproses autentikasi pengguna dan menyimpan data pengguna ke dalam database pengguna sesuai hak akses masing-masing.
+Proses 5.0 (Monitoring Ekosistem Wisata): Sistem mengintegrasikan data destinasi, layanan wisata, dan statistik pengunjung untuk melakukan monitoring ekosistem wisata secara terintegrasi. Hasil monitoring digunakan untuk menghasilkan laporan wisata dan insight destinasi bagi admin sistem.
+
+5. PERANCANGAN UI/UX
+
+Perancangan UI/UX (User Interface dan User Experience) pada sistem MBT (Madura Beach Tourism) dilakukan untuk menciptakan tampilan aplikasi yang modern, interaktif, dan mudah digunakan oleh pengguna. Desain antarmuka dirancang dengan memperhatikan aspek kenyamanan pengguna, kemudahan navigasi, serta penyajian informasi wisata yang informatif dan menarik.
+
+Perancangan desain meliputi beberapa halaman utama, antara lain:
+
+- Halaman Dashboard/Beranda
+- Halaman Destinasi Wisata
+- Halaman Statistik Pengunjung
+- Halaman Profil Pengguna
+- Halaman Smart Tourism Network
+Desain UI/UX dibuat menggunakan aplikasi Figma sebagai media perancangan prototype dan visual interface sistem. Seluruh detail desain, wireframe, prototype, serta alur interaksi pengguna dapat diakses melalui tautan berikut:
+
+Gambar 4 Design UI/UX MBT
+
+Prototype Desain UI/UX MBT di Figma
+
+Berdasarkan hasil perancangan, tampilan sistem menggunakan konsep desain minimalis dengan dominasi warna biru dan putih untuk memberikan kesan modern, profesional, dan nyaman digunakan oleh pengguna. Selain itu, tata letak menu dan fitur disusun secara terstruktur agar memudahkan pengguna dalam mengakses informasi destinasi wisata, statistik pengunjung, hingga layanan pendukung wisata lainnya.
+
+6. PERANCANGAN FITUR DAN MENU
+
+6.1 Menu dan Fitur (User)
+
+6.1.1 Menu Dashboard / Beranda
+
+Menu Dashboard atau Beranda merupakan halaman utama sistem yang berfungsi untuk menampilkan gambaran umum mengenai platform MBT (Madura Beach Tourism). Pada halaman ini, pengguna dapat melihat informasi singkat terkait destinasi wisata unggulan yang tersedia di dalam platform.
+
+Fitur pada Menu Dashboard:
+
+- Menampilkan daftar destinasi wisata unggulan.
+- Menampilkan informasi umum mengenai platform wisata.
+- Menampilkan preview statistik wisata.
+- Menampilkan rekomendasi destinasi wisata.
+Pada menu ini, pengguna hanya dapat melihat informasi umum tanpa melakukan eksplorasi detail terhadap destinasi wisata.
+
+6.1.2 Menu Destinasi
+
+Menu Destinasi digunakan sebagai halaman utama untuk mengeksplorasi berbagai destinasi wisata yang tersedia dalam sistem.
+
+a. Fitur Explore Destination
+
+Fitur ini memungkinkan pengguna untuk memilih dan mengeksplorasi berbagai destinasi wisata, seperti:
+
+- Pantai Talang Siring
+- Pantai Lon Malang
+- Pantai Lombang
+- Destinasi wisata lainnya
+b. Fitur Informasi Destinasi
+
+Fitur ini menampilkan informasi lengkap mengenai destinasi wisata yang dipilih, meliputi:
+
+- Deskripsi wisata
+- Rating wisata
+- Statistik lokal destinasi
+c. Fitur Statistik Lokal
+
+Fitur ini menyajikan data pendukung terkait destinasi wisata, seperti:
+
+- Jumlah pengunjung harian
+- Jumlah UMKM aktif
+- Data wahana wisata
+d. Fitur Wahana Wisata
+
+Fitur ini menampilkan berbagai aktivitas dan fasilitas wisata yang tersedia pada destinasi, antara lain:
+
+- Banana boat
+- Wisata mangrove
+- Spot foto
+- Camping area
+- Wahana wisata lainnya
+e. Fitur Smart Tourism Network
+
+Fitur ini menyediakan rekomendasi layanan pendukung wisata yang terintegrasi dengan destinasi wisata.
+
+1) Fitur Transportasi Terdekat
+
+Menampilkan informasi layanan transportasi wisata, seperti:
+
+- Rental kendaraan
+- Travel wisata
+- Shuttle wisata
+- Transportasi lokal
+2) Fitur Akomodasi Sekitar
+
+Menampilkan rekomendasi tempat penginapan terdekat, seperti:
+
+- Hotel
+- Homestay
+- Villa
+- Guest house
+- Penginapan lokal
+3) Fitur Kuliner dan Souvenir
+
+Menampilkan informasi layanan kuliner dan UMKM lokal, seperti:
+
+- Café
+- Restoran lokal
+- Pusat oleh-oleh
+- Produk UMKM khas Madura
+6.1.3 Menu Statistik Pengunjung
+
+Menu Statistik Pengunjung digunakan untuk menampilkan visualisasi data pengunjung wisata secara informatif dan interaktif.
+
+a. Fitur Grafik Pengunjung
+
+Fitur ini menampilkan grafik jumlah pengunjung berdasarkan periode:
+
+- Harian
+- Bulanan
+- Tahunan
+b. Fitur Segmentasi Wisatawan
+
+Fitur ini menampilkan kategori wisatawan berdasarkan asal pengunjung, yaitu:
+
+- Wisatawan lokal
+- Wisatawan luar daerah
+- Wisatawan mancanegara
+6.1.4 Menu Profil
+
+Menu Profil digunakan untuk menampilkan data identitas pengguna yang terdaftar dalam sistem.
+
+Fitur pada Menu Profil:
+
+- Menampilkan identitas pengguna.
+- Menampilkan ID pengunjung.
+- Menampilkan informasi akun pengguna.
