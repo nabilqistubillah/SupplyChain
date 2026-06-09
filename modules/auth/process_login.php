@@ -22,30 +22,43 @@ if (empty($usernameInput) || empty($passwordInput)) {
 
 try {
     // 2. Cari user berdasarkan username atau email
-    $sql = "SELECT * FROM users WHERE username = :username OR email = :email LIMIT 1";
+    $sql  = "SELECT * FROM users WHERE (username = :username OR email = :email) AND status = 'active' LIMIT 1";
     $stmt = db_query($sql, [
         'username' => $usernameInput,
-        'email' => $usernameInput
+        'email'    => $usernameInput
     ]);
-    
+
     $user = $stmt->fetch();
-    
+
     // 3. Verifikasi user dan password
     if ($user && password_verify($passwordInput, $user['password'])) {
-        // Login berhasil
         login_user($user);
-        log_info("User '{$user['username']}' logged in successfully. Role: {$user['role']}");
-        
-        // Arahkan ke dashboard utama
-        redirect(BASE_URL . 'index.php');
+        log_info("User '{$user['username']}' logged in. Role: {$user['role']}");
+
+        // 4. Redirect berdasarkan role
+        redirect_by_role();
     } else {
-        // Gagal login
-        log_warning("Failed login attempt for username: '{$usernameInput}'");
+        log_warning("Failed login attempt for: '{$usernameInput}'");
         $_SESSION['error_message'] = "Username atau password salah.";
         redirect(BASE_URL . 'index.php?module=auth&action=login');
     }
 } catch (PDOException $e) {
-    log_error("Database error during login process: " . $e->getMessage());
-    $_SESSION['error_message'] = "Terjadi masalah teknis pada server. Silakan coba sesaat lagi.";
-    redirect(BASE_URL . 'index.php?module=auth&action=login');
+    // Fallback: jika kolom status belum ada (DB lama), coba tanpa filter status
+    try {
+        $sql2  = "SELECT * FROM users WHERE username = :username OR email = :email LIMIT 1";
+        $stmt2 = db_query($sql2, ['username' => $usernameInput, 'email' => $usernameInput]);
+        $user2 = $stmt2->fetch();
+        if ($user2 && password_verify($passwordInput, $user2['password'])) {
+            login_user($user2);
+            log_info("User '{$user2['username']}' logged in (legacy). Role: {$user2['role']}");
+            redirect_by_role();
+        } else {
+            $_SESSION['error_message'] = "Username atau password salah.";
+            redirect(BASE_URL . 'index.php?module=auth&action=login');
+        }
+    } catch (PDOException $e2) {
+        log_error("Database error during login: " . $e2->getMessage());
+        $_SESSION['error_message'] = "Terjadi masalah teknis pada server. Silakan coba sesaat lagi.";
+        redirect(BASE_URL . 'index.php?module=auth&action=login');
+    }
 }

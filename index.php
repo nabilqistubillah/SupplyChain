@@ -1,5 +1,5 @@
 <?php
-// index.php - Front Controller
+// index.php - Front Controller BahariChain
 
 // 1. Load Configurations & Helpers
 require_once __DIR__ . '/config/app.php';
@@ -23,18 +23,52 @@ $action = preg_replace('/[^a-zA-Z0-9_-]/', '', $action);
 
 // 4. White-listed Routes
 $routes = [
-    'dashboard' => ['index'],
-    'auth' => ['login', 'register', 'logout', 'process_login', 'process_register'],
-    'destinations' => ['index', 'detail', 'manage', 'save', 'delete'],
-    'vendors' => ['profile', 'products', 'manage_product', 'save_product', 'delete_product'],
-    'orders' => ['index', 'checkout', 'add_to_cart', 'remove_from_cart', 'history', 'detail', 'process_payment', 'process_order'],
-    'reports' => ['visitors']
+    // ── Public / Auth ──────────────────────────────────────────────
+    'auth'        => ['login', 'register', 'logout', 'process_login', 'process_register'],
+
+    // ── Legacy public pages (kept for compatibility) ────────────────
+    'dashboard'   => ['index'],
+
+    // ── Administrator ───────────────────────────────────────────────
+    'admin'       => [
+        'dashboard',
+        'users',
+        'destinations',
+        'packages',
+        'payments',
+        'reviews',
+        'reports',
+    ],
+
+    // ── Pengelola Wisata ─────────────────────────────────────────────
+    'pengelola'   => [
+        'dashboard',
+        'destinations',
+        'packages',
+        'transportation',
+        'reservations',
+        'reports',
+    ],
+
+    // ── Wisatawan ────────────────────────────────────────────────────
+    'wisatawan'   => [
+        'dashboard',
+        'destinations',
+        'packages',
+        'reservations',
+        'payment',
+        'notifications',
+        'reviews',
+    ],
+
+    // ── Error pages ──────────────────────────────────────────────────
+    'errors'      => ['403', '404', '500'],
 ];
 
 // 5. Route Execution
 if (array_key_exists($module, $routes) && in_array($action, $routes[$module])) {
     $moduleFile = __DIR__ . "/modules/{$module}/{$action}.php";
-    
+
     if (file_exists($moduleFile)) {
         try {
             require_once $moduleFile;
@@ -49,6 +83,10 @@ if (array_key_exists($module, $routes) && in_array($action, $routes[$module])) {
         require_once __DIR__ . '/modules/errors/404.php';
     }
 } else {
-    http_response_code(404);
-    require_once __DIR__ . '/modules/errors/404.php';
+    // Fallback: jika modul tidak dikenali, arahkan ke dashboard sesuai role
+    if (is_authenticated()) {
+        redirect_by_role();
+    } else {
+        redirect(BASE_URL . 'index.php?module=auth&action=login');
+    }
 }
