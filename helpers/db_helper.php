@@ -8,7 +8,9 @@ class Database {
     private function __construct() {
         $config = require __DIR__ . '/../config/database.php';
         
-        $dsn = "mysql:host={$config['host']};dbname={$config['db']};charset={$config['charset']}";
+        // PERBAIKAN: Menyisipkan config port ke dalam DSN
+        $dsn = "mysql:host={$config['host']};port={$config['port']};dbname={$config['db']};charset={$config['charset']}";
+        
         $options = [
             PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -21,7 +23,8 @@ class Database {
             if (function_exists('log_critical')) {
                 log_critical("Database Connection Failed: " . $e->getMessage());
             }
-            die("Koneksi basis data gagal. Hubungi administrator.");
+            // Menampilkan pesan error asli dari MySQL agar gampang dilacak
+            die("Koneksi basis data gagal: " . $e->getMessage());
         }
     }
 

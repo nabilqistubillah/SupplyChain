@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <div style="text-align: center; margin-bottom: 24px;">
             <i class="fa-solid fa-user-plus" style="font-size: 40px; color: var(--primary); margin-bottom: 12px;"></i>
             <h2 style="font-weight: 700; color: var(--primary);">Registrasi Akun</h2>
-            <p style="color: var(--text-secondary); font-size: 14px;">Daftar untuk bergabung ke ekosistem MBT</p>
+            <p style="color: var(--text-secondary); font-size: 14px;">Daftar untuk bergabung ke ekosistem BahariChain</p>
         </div>
 
         <?php if (isset($_SESSION['error_message'])): ?>
@@ -46,12 +46,8 @@ require_once __DIR__ . '/../../includes/header.php';
                 <label for="role" class="form-label">Daftar Sebagai</label>
                 <select id="role" name="role" class="form-control" required style="cursor: pointer;">
                     <option value="wisatawan" selected>Wisatawan / Pengunjung</option>
-                    <option value="buyer">Pihak Hotel / Restoran (Buyer B2B)</option>
-                    <option value="vendor">Vendor Lokal / UMKM (Seller)</option>
+                    <option value="pengelola_wisata">Pengelola Wisata (Mitra)</option>
                 </select>
-                <small style="color: var(--text-secondary); display: block; margin-top: 6px; font-size: 11px;">
-                    * Akun Vendor memerlukan data profil usaha tambahan setelah registrasi.
-                </small>
             </div>
             
             <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px; font-weight: 600; margin-top: 10px;">
