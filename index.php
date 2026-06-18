@@ -29,6 +29,9 @@ $routes = [
     // ── Legacy public pages (kept for compatibility) ────────────────
     'dashboard'   => ['index'],
 
+    // ── Halaman Publik Destinasi ─────────────────────────────────────
+    'destinasi'   => ['index', 'detail'],
+
     // ── Administrator ───────────────────────────────────────────────
     'admin'       => [
         'dashboard',

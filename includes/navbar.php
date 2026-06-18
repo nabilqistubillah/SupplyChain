@@ -14,12 +14,10 @@
             <a href="<?= BASE_URL ?>index.php" style="color: #ffffff; font-weight: 500;">
                 <i class="fa-solid fa-house" style="margin-right: 5px;"></i>Beranda
             </a>
-            <a href="<?= BASE_URL ?>index.php?module=destinations" style="color: #ffffff; font-weight: 500;">
+            <a href="<?= BASE_URL ?>index.php?module=destinasi" style="color: #ffffff; font-weight: 500;">
                 <i class="fa-solid fa-map-location-dot" style="margin-right: 5px;"></i>Destinasi
             </a>
-            <a href="<?= BASE_URL ?>index.php?module=reports&action=visitors" style="color: #ffffff; font-weight: 500;">
-                <i class="fa-solid fa-chart-line" style="margin-right: 5px;"></i>Statistik
-            </a>
+
         </nav>
 
         <!-- User Actions -->

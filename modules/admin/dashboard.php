@@ -116,7 +116,7 @@ require_once __DIR__ . '/../../includes/header.php';
         <i class="fa-solid fa-toolbox"></i> Kelola Platform
     </h2>
     
-    <div class="grid grid-3" style="gap: 16px;">
+    <div class="grid grid-4" style="gap: 16px;">
         <!-- Action 1: Verifikasi Pembayaran -->
         <a href="<?= BASE_URL ?>index.php?module=admin&action=payments" style="text-decoration: none;">
             <div class="card" style="padding: 20px; cursor: pointer; transition: all 0.3s ease; text-align: center;">
@@ -140,7 +140,16 @@ require_once __DIR__ . '/../../includes/header.php';
             </div>
         </a>
         
-        <!-- Action 3: Laporan & Analitik -->
+        <!-- Action 3: Registrasi Mitra Baru -->
+        <a href="<?= BASE_URL ?>index.php?module=admin&action=users" style="text-decoration: none;">
+            <div class="card" style="padding: 20px; cursor: pointer; transition: all 0.3s ease; text-align: center;">
+                <i class="fa-solid fa-user-plus" style="font-size: 36px; color: #10b981; margin-bottom: 12px;"></i>
+                <h3 style="color: var(--primary); font-weight: 600; margin-bottom: 4px;">➕ Registrasi Mitra Baru</h3>
+                <p style="color: var(--text-secondary); font-size: 13px; margin: 0;">Daftarkan akun vendor UMKM</p>
+            </div>
+        </a>
+        
+        <!-- Action 4: Laporan & Analitik -->
         <a href="<?= BASE_URL ?>index.php?module=admin&action=reports" style="text-decoration: none;">
             <div class="card" style="padding: 20px; cursor: pointer; transition: all 0.3s ease; text-align: center;">
                 <i class="fa-solid fa-chart-line" style="font-size: 36px; color: #8b5cf6; margin-bottom: 12px;"></i>

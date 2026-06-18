@@ -34,8 +34,8 @@ require_once __DIR__ . '/../../includes/header.php';
         <a href="<?= BASE_URL ?>index.php?module=destinations" class="btn btn-primary" style="background-color: var(--accent); color: white; font-weight: 600;">
             <i class="fa-solid fa-map-marked-alt"></i> Jelajahi Destinasi Wisata
         </a>
-        <a href="<?= BASE_URL ?>index.php?module=reports&action=visitors" class="btn btn-secondary" style="background-color: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255,255,255,0.25);">
-            <i class="fa-solid fa-chart-pie"></i> Lihat Statistik Pengunjung
+        <a href="<?= BASE_URL ?>index.php?module=paket_wisata" class="btn btn-secondary" style="background-color: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255,255,255,0.25);">
+            <i class="fa-solid fa-suitcase"></i> Lihat Paket Wisata
         </a>
     </div>
 </div>
@@ -104,18 +104,7 @@ require_once __DIR__ . '/../../includes/header.php';
     <?php endif; ?>
 </div>
 
-<!-- Eco-System Partnership Info banner -->
-<div class="card" style="padding: 30px; display: flex; flex-direction: column; md-flex-direction: row; justify-content: space-between; align-items: center; gap: 20px; background-color: #f0fdf4; border-color: #bbf7d0;">
-    <div>
-        <h3 style="color: #166534; font-weight: 700; margin-bottom: 6px;">Apakah Anda Memiliki Usaha/UMKM di Madura?</h3>
-        <p style="color: #1e3f20; font-size: 14px; max-width: 780px;">
-            Daftarkan bisnis penginapan (homestay), penyewaan kendaraan, warung kuliner, atau toko oleh-oleh Anda untuk terintegrasi dengan jaringan hotel, restoran, dan wisatawan global.
-        </p>
-    </div>
-    <a href="<?= BASE_URL ?>index.php?module=auth&action=register" class="btn btn-primary" style="background-color: #166534; white-space: nowrap;">
-        <i class="fa-solid fa-user-plus"></i> Gabung Sebagai Vendor
-    </a>
-</div>
+
 
 <?php
 require_once __DIR__ . '/../../includes/footer.php';
