@@ -22,30 +22,30 @@
 
     <!-- Navigation -->
     <div class="sidebar-nav">
-        <div class="sidebar-section-label">Utama</div>
+        <div class="sidebar-section-label">Menu Utama</div>
         <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=dashboard">
             <i class="fa-solid fa-house nav-icon"></i> Beranda
         </a>
 
-        <div class="sidebar-section-label">Jelajahi</div>
+        <div class="sidebar-section-label">Eksplorasi</div>
         <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=destinations">
-            <i class="fa-solid fa-map-location-dot nav-icon"></i> Destinasi Wisata
+            <i class="fa-solid fa-umbrella-beach nav-icon"></i> Jelajahi Destinasi
         </a>
         <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=packages">
-            <i class="fa-solid fa-suitcase-rolling nav-icon"></i> Paket Wisata
+            <i class="fa-solid fa-box nav-icon"></i> Paket Wisata
         </a>
 
-        <div class="sidebar-section-label">Perjalanan Saya</div>
+        <div class="sidebar-section-label">Aktivitas Saya</div>
         <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=reservations">
-            <i class="fa-solid fa-calendar-days nav-icon"></i> Reservasi Saya
+            <i class="fa-solid fa-cart-shopping nav-icon"></i> Pesanan & Tiket Saya
         </a>
-        <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=payment">
-            <i class="fa-solid fa-upload nav-icon"></i> Unggah Bukti Bayar
+        <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=reviews">
+            <i class="fa-solid fa-star nav-icon"></i> Ulasan & Rating
         </a>
 
-        <div class="sidebar-section-label">Lainnya</div>
-        <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=reviews">
-            <i class="fa-solid fa-star nav-icon"></i> Ulasan Saya
+        <div class="sidebar-section-label">Akun</div>
+        <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=profile">
+            <i class="fa-solid fa-user nav-icon"></i> Profil Saya
         </a>
         <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=notifications">
             <i class="fa-regular fa-bell nav-icon"></i> Notifikasi

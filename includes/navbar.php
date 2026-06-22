@@ -6,7 +6,7 @@
         <!-- Logo -->
         <a href="<?= BASE_URL ?>index.php" style="color: #ffffff; font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
             <i class="fa-solid fa-anchor" style="color: var(--accent);"></i>
-            <span>MBT<span style="color: var(--accent); font-weight: 300;">Madura</span></span>
+            <span>BahariChain<span style="color: var(--accent); font-weight: 300;">Madura</span></span>
         </a>
 
         <!-- Main Nav -->

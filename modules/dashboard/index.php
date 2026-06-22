@@ -28,7 +28,7 @@ require_once __DIR__ . '/../../includes/header.php';
 <div style="background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; border-radius: var(--radius); padding: 50px 30px; text-align: center; margin-bottom: 40px; box-shadow: var(--shadow-lg);">
     <h1 style="font-size: 38px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.5px;">Connecting Local Vendors to Global Tourism</h1>
     <p style="font-size: 16px; max-width: 680px; margin: 0 auto 30px auto; opacity: 0.9; line-height: 1.6;">
-        Selamat datang di **MBT (Madura Blue Tourism)**. Platform digital rantai pasok B2B terintegrasi yang menghubungkan industri perhotelan dan kuliner dengan UMKM, penginapan, dan jasa transportasi lokal di Madura.
+        Selamat datang di **BahariChain** - Platform Reservasi Pariwisata Bahari. Jelajahi destinasi pantai eksotis Madura, pesan paket wisata unggulan, dan nikmati pengalaman liburan tak terlupakan dengan dukungan UMKM lokal dan jasa transportasi terpercaya.
     </p>
     <div style="display: inline-flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
         <a href="<?= BASE_URL ?>index.php?module=destinations" class="btn btn-primary" style="background-color: var(--accent); color: white; font-weight: 600;">

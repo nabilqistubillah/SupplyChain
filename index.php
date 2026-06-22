@@ -59,6 +59,7 @@ $routes = [
         'payment',
         'notifications',
         'reviews',
+        'profile',
     ],
 
     // ── Error pages ──────────────────────────────────────────────────

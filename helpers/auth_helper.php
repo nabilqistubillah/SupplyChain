@@ -28,9 +28,9 @@ if (!function_exists('login_user')) {
         session_regenerate_id(true);
         $_SESSION['user_id']    = $user['id'];
         $_SESSION['username']   = $user['username'];
-        $_SESSION['full_name']  = $user['full_name'] ?? $user['username'];
+        $_SESSION['full_name']  = $user['nama_lengkap'] ?? $user['username'];
         $_SESSION['email']      = $user['email'] ?? '';
-        $_SESSION['role']       = $user['role']; // 'admin' | 'pengelola_wisata' | 'wisatawan'
+        $_SESSION['role']       = $user['nama_role']; // From roles table: 'admin' | 'pengelola_wisata' | 'wisatawan'
         $_SESSION['logged_in']  = true;
     }
 }
