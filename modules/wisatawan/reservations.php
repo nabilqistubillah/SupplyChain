@@ -361,6 +361,10 @@ require_once __DIR__ . '/../../includes/header.php';
                                         <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=reservations&ticket_id=<?= $res['id'] ?>" target="_blank" class="btn btn-secondary" style="padding: 6px 12px; font-size: 12px; color: var(--primary); border-color: var(--primary);">
                                             <i class="fa-solid fa-ticket"></i> E-Tiket
                                         </a>
+                                        <!-- Beri Ulasan -->
+                                        <a href="<?= BASE_URL ?>index.php?module=wisatawan&action=reviews&paket_wisata_id=<?= $res['paket_wisata_id'] ?>" class="btn btn-primary" style="padding: 6px 12px; font-size: 12px; background-color: var(--accent);">
+                                            <i class="fa-solid fa-star"></i> Ulas
+                                        </a>
                                     <?php else: ?>
                                         <span style="color: var(--text-secondary); font-size: 12px; font-style: italic;">Tidak ada aksi</span>
                                     <?php endif; ?>
