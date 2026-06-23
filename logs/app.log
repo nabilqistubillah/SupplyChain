@@ -53,3 +53,22 @@
 [2026-06-15 00:51:02] [INFO] [User ID: 1] [IP: ::1] User 'admin' logged out.
 [2026-06-15 00:51:02] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain_db.destinations' doesn't exist
 [2026-06-15 00:51:15] [INFO] [User ID: 5] [IP: ::1] User 'Ahmad' (ID: 5) logged in. Role: wisatawan
+[2026-06-22 11:02:02] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-22 11:03:04] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for: 'Ahmad'
+[2026-06-22 11:03:22] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for: 'Ahmad'
+[2026-06-22 11:04:29] [INFO] [User ID: 5] [IP: ::1] User 'Ahmad' (ID: 5) logged in. Role: wisatawan
+[2026-06-22 11:04:44] [ERROR] [User ID: 5] [IP: ::1] Module file not found: D:\Xampp\htdocs\TourChain/modules/wisatawan/destinations.php
+[2026-06-22 11:04:49] [ERROR] [User ID: 5] [IP: ::1] Module file not found: D:\Xampp\htdocs\TourChain/modules/wisatawan/packages.php
+[2026-06-23 09:21:57] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-23 09:22:12] [INFO] [User ID: 5] [IP: ::1] User 'Ahmad' (ID: 5) logged in. Role: wisatawan
+[2026-06-23 09:22:24] [ERROR] [User ID: 5] [IP: ::1] Module file not found: D:\Xampp\htdocs\TourChain/modules/wisatawan/destinations.php
+[2026-06-23 09:22:27] [ERROR] [User ID: 5] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-23 09:22:39] [ERROR] [User ID: 5] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-23 09:22:56] [ERROR] [User ID: 5] [IP: ::1] Module file not found: D:\Xampp\htdocs\TourChain/modules/wisatawan/destinations.php
+[2026-06-23 09:23:01] [ERROR] [User ID: 5] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-23 09:23:13] [ERROR] [User ID: 5] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-23 14:20:44] [ERROR] [User ID: 5] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-23 14:21:14] [ERROR] [User ID: 5] [IP: ::1] Module file not found: D:\Xampp\htdocs\TourChain/modules/wisatawan/reservations.php
+[2026-06-23 14:21:20] [ERROR] [User ID: 5] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-23 14:46:38] [ERROR] [User ID: 5] [IP: ::1] Module file not found: D:\Xampp\htdocs\TourChain/modules/wisatawan/packages.php
+[2026-06-23 14:46:40] [ERROR] [User ID: 5] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
