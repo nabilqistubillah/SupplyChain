@@ -44,10 +44,12 @@ $routes = [
     'pengelola'   => [
         'dashboard',
         'destinations',
+        "destinations_create",
         'packages',
         'transportation',
         'reservations',
         'reports',
+        'reviews',
     ],
 
     // ── Wisatawan ────────────────────────────────────────────────────

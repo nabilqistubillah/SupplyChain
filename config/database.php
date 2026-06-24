@@ -4,8 +4,8 @@
 
 return [
     'host'    => '127.0.0.1',
-    'port'    => 3307,                  // Custom MySQL port (default 3306 had issues)
-    'db'      => 'baharichain_db',      // BahariChain database
+    'port'    => 3306,                  // Custom MySQL port (default 3306 had issues)
+    'db'      => 'baharichain',      // BahariChain database
     'user'    => 'root',
     'pass'    => '',
     'charset' => 'utf8mb4',

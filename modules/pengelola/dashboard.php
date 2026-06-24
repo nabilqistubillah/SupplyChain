@@ -115,8 +115,8 @@ require_once __DIR__ . '/../../includes/header.php';
 </h2>
 
 <div class="grid grid-2" style="gap: 20px; margin-bottom: 40px;">
-    <!-- Menu 1: Kelola Destinasi -->
-    <a href="<?= BASE_URL ?>index.php?module=destinasi&action=manage" style="text-decoration: none;">
+    
+    <a href="<?= BASE_URL ?>index.php?module=pengelola&action=destinations" style="text-decoration: none;">
         <div class="card" style="padding: 30px; cursor: pointer; transition: all 0.3s ease; border-top: 4px solid #047857;">
             <div style="display: flex; align-items: flex-start; gap: 20px;">
                 <i class="fa-solid fa-umbrella-beach" style="font-size: 48px; color: #047857; margin-top: 4px;"></i>
@@ -131,8 +131,7 @@ require_once __DIR__ . '/../../includes/header.php';
         </div>
     </a>
     
-    <!-- Menu 2: Tiket Masuk & Pesanan -->
-    <a href="<?= BASE_URL ?>index.php?module=pesanan&action=incoming" style="text-decoration: none;">
+    <a href="<?= BASE_URL ?>index.php?module=pengelola&action=reservations" style="text-decoration: none;">
         <div class="card" style="padding: 30px; cursor: pointer; transition: all 0.3s ease; border-top: 4px solid #f59e0b;">
             <div style="display: flex; align-items: flex-start; gap: 20px;">
                 <i class="fa-solid fa-ticket" style="font-size: 48px; color: #f59e0b; margin-top: 4px;"></i>
@@ -147,8 +146,7 @@ require_once __DIR__ . '/../../includes/header.php';
         </div>
     </a>
     
-    <!-- Menu 3: Ulasan Pengunjung -->
-    <a href="<?= BASE_URL ?>index.php?module=review&action=manage" style="text-decoration: none;">
+    <a href="<?= BASE_URL ?>index.php?module=pengelola&action=reviews" style="text-decoration: none;">
         <div class="card" style="padding: 30px; cursor: pointer; transition: all 0.3s ease; border-top: 4px solid #8b5cf6;">
             <div style="display: flex; align-items: flex-start; gap: 20px;">
                 <i class="fa-solid fa-star" style="font-size: 48px; color: #8b5cf6; margin-top: 4px;"></i>
@@ -163,8 +161,7 @@ require_once __DIR__ . '/../../includes/header.php';
         </div>
     </a>
     
-    <!-- Menu 4: Laporan Pendapatan -->
-    <a href="<?= BASE_URL ?>index.php?module=laporan" style="text-decoration: none;">
+    <a href="<?= BASE_URL ?>index.php?module=pengelola&action=reports" style="text-decoration: none;">
         <div class="card" style="padding: 30px; cursor: pointer; transition: all 0.3s ease; border-top: 4px solid #10b981;">
             <div style="display: flex; align-items: flex-start; gap: 20px;">
                 <i class="fa-solid fa-chart-line" style="font-size: 48px; color: #10b981; margin-top: 4px;"></i>
@@ -178,6 +175,7 @@ require_once __DIR__ . '/../../includes/header.php';
             </div>
         </div>
     </a>
+</div>
 </div>
 
 <!-- ==============================================================================

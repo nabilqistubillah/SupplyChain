@@ -53,3 +53,50 @@
 [2026-06-15 00:51:02] [INFO] [User ID: 1] [IP: ::1] User 'admin' logged out.
 [2026-06-15 00:51:02] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain_db.destinations' doesn't exist
 [2026-06-15 00:51:15] [INFO] [User ID: 5] [IP: ::1] User 'Ahmad' (ID: 5) logged in. Role: wisatawan
+[2026-06-21 20:18:33] [CRITICAL] [User ID: Guest] [IP: ::1] Database Connection Failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2026-06-21 20:20:40] [CRITICAL] [User ID: Guest] [IP: ::1] Database Connection Failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2026-06-21 20:23:17] [CRITICAL] [User ID: Guest] [IP: ::1] Database Connection Failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2026-06-22 10:47:51] [CRITICAL] [User ID: Guest] [IP: ::1] Database Connection Failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2026-06-22 10:49:19] [CRITICAL] [User ID: Guest] [IP: ::1] Database Connection Failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2026-06-22 10:49:41] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-22 10:50:14] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-23 10:54:41] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-23 10:56:34] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-23 11:03:22] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 08:56:01] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 09:17:32] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/packages.php
+[2026-06-24 09:17:37] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/packages.php
+[2026-06-24 09:21:40] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/destinations.php
+[2026-06-24 09:21:42] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reservations.php
+[2026-06-24 09:21:45] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reviews.php
+[2026-06-24 09:21:47] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reports.php
+[2026-06-24 09:21:53] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 09:21:57] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 09:24:17] [ERROR] [User ID: 6] [IP: ::1] Gagal memuat daftar destinasi: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pengelola_id' in 'where clause'
+[2026-06-24 09:35:57] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reviews.php
+[2026-06-24 09:36:35] [ERROR] [User ID: 6] [IP: ::1] Gagal memuat ulasan: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'r.destinasi_id' in 'on clause'
+[2026-06-24 09:40:28] [ERROR] [User ID: 6] [IP: ::1] Gagal memuat ulasan: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.nama' in 'field list'
+[2026-06-24 09:43:20] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reservations.php
+[2026-06-24 09:44:48] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reservations.php
+[2026-06-24 09:44:49] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reservations.php
+[2026-06-24 09:44:51] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reservations.php
+[2026-06-24 09:47:11] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reservations.php
+[2026-06-24 09:47:12] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reservations.php
+[2026-06-24 09:47:16] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reservations.php
+[2026-06-24 09:49:27] [ERROR] [User ID: 6] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/pengelola/reports.php
+[2026-06-24 09:59:01] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' logged out.
+[2026-06-24 09:59:01] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 09:59:10] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-24 10:06:51] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' logged out.
+[2026-06-24 10:06:51] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 10:07:07] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-24 10:07:12] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' logged out.
+[2026-06-24 10:07:13] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 10:07:18] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-24 10:08:25] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 10:09:35] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 10:09:44] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' logged out.
+[2026-06-24 10:09:44] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 10:09:50] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-24 10:10:09] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-24 10:10:15] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
