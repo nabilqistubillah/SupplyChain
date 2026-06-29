@@ -12,7 +12,7 @@
         <!-- Main Nav -->
         <nav style="display: flex; align-items: center; gap: 24px;">
             <a href="<?= BASE_URL ?>index.php" style="color: #ffffff; font-weight: 500;">
-                <i class="fa-solid fa-house" style="margin-right: 5px;"></i>Beranda
+                <i class="fa-solid fa-house" style="margin-right: 5px;"></i>Dashboard
             </a>
             <a href="<?= BASE_URL ?>index.php?module=destinations" style="color: #ffffff; font-weight: 500;">
                 <i class="fa-solid fa-map-location-dot" style="margin-right: 5px;"></i>Destinasi
