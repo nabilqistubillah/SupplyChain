@@ -29,13 +29,22 @@ try {
 ?>
 
 <div class="container-fluid py-4 mb-4">
-    <div class="d-flex justify-content-between align-items-center mb-10" style="margin-bottom: 15px;">
-        <h2 style="font-weight: 700; color: var(--primary); margin: 0; display: flex; align-items: center; gap: 10px;">
-            <i class="fa-solid fa-chart-line" style="color: #10b981;"></i> Laporan Pendapatan
-        </h2>
-        <button class="btn btn-outline-success" onclick="window.print()" style="border-color: #10b981; color: #10b981;">
-            <i class="fa-solid fa-print"></i> Cetak Laporan
-        </button>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+            <h2 style="font-weight: 700; color: var(--primary); margin: 0; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-chart-line" style="color: #10b981;"></i> Laporan Pendapatan
+            </h2>
+            
+            <div>
+                <button class="btn btn-outline-success" onclick="window.print()" style="border-color: #10b981; color: #10b981; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-print"></i> Cetak Laporan
+                </button>
+            </div>
+        </div>
+
+        <a href="<?= BASE_URL ?>index.php?module=pengelola&action=dashboard" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-arrow-left"></i> Dashboard
+        </a>
     </div>
 
     <div class="row">
