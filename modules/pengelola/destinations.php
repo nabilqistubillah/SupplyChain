@@ -20,11 +20,17 @@ require_once __DIR__ . '/../../includes/header.php';
         <i class="fa-solid fa-umbrella-beach"></i> Kelola Destinasi
     </h2>
     
-    <a href="<?= BASE_URL ?>index.php?module=pengelola&action=destinations_create" 
-       style="background-color: #047857; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease; box-shadow: var(--shadow-sm);">
-        <i class="fa-solid fa-plus"></i> Tambah Destinasi
-    </a>
+    <div style="display: flex; gap: 12px; align-items: center;">
+        <a href="<?= BASE_URL ?>index.php?module=pengelola&action=destinations_create" 
+           style="background-color: #047857; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease; box-shadow: var(--shadow-sm); display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-plus"></i> Tambah Destinasi
+        </a>
+        <a href="<?= BASE_URL ?>index.php?module=pengelola&action=dashboard" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-arrow-left"></i> Dashboard
+        </a>
+    </div>
 </div>
+
 
 <div class="card" style="padding: 24px; border-top: 4px solid #047857; box-shadow: var(--shadow-sm);">
     <div style="overflow-x: auto;">
