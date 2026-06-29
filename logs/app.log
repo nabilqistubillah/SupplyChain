@@ -166,3 +166,23 @@
 [2026-06-27 11:50:09] [ERROR] [User ID: 5] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/wisatawan/destinations.php
 [2026-06-29 10:03:37] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
 [2026-06-29 10:03:45] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-29 11:44:13] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' logged out.
+[2026-06-29 11:44:13] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 11:44:31] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for: 'Karina'
+[2026-06-29 11:44:59] [WARNING] [User ID: Guest] [IP: ::1] Failed login attempt for: 'Karina'
+[2026-06-29 11:46:33] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-29 12:06:35] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:15:30] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:15:34] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:25:09] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' logged out.
+[2026-06-29 12:25:09] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:25:32] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' (ID: 6) logged in. Role: pengelola_wisata
+[2026-06-29 12:25:36] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:25:40] [ERROR] [User ID: 6] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:28:14] [INFO] [User ID: 6] [IP: ::1] User 'Anggara' logged out.
+[2026-06-29 12:28:14] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:28:19] [ERROR] [User ID: Guest] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:28:55] [INFO] [User ID: 1] [IP: ::1] User 'admin' (ID: 1) logged in. Role: admin
+[2026-06-29 12:29:11] [ERROR] [User ID: 1] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/admin/payments.php
+[2026-06-29 12:29:15] [ERROR] [User ID: 1] [IP: ::1] Dashboard page database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baharichain.destinations' doesn't exist
+[2026-06-29 12:29:29] [ERROR] [User ID: 1] [IP: ::1] Module file not found: C:\xampp\htdocs\SupplyChain/modules/admin/reports.php
