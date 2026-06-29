@@ -14,10 +14,13 @@ require_once __DIR__ . '/../../includes/header.php';
 ?>
 
 <div class="container-fluid py-4 mb-5">
-    <div class="d-flex justify-content-between align-items-center mb-4">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
         <h2 style="font-weight: 700; color: var(--primary); margin: 0; display: flex; align-items: center; gap: 10px;">
             <i class="fa-solid fa-star" style="color: #8b5cf6;"></i> Ulasan Pengunjung
         </h2>
+        <a href="<?= BASE_URL ?>index.php?module=pengelola&action=dashboard" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-arrow-left"></i> Dashboard
+        </a>
     </div>
 
     <div class="alert mb-4" style="background-color: #f3f0ff; border-left: 4px solid #8b5cf6; color: #5b21b6;">

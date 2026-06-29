@@ -116,8 +116,17 @@ require_once __DIR__ . '/../../includes/header.php';
         <i class="fa-solid fa-toolbox"></i> Kelola Platform
     </h2>
     
-    <div class="grid grid-3" style="gap: 16px;">
-        <!-- Action 1: Verifikasi Pembayaran -->
+    <div class="grid grid-4" style="gap: 16px;">
+        <!-- Action 1: Kelola Pengguna -->
+        <a href="<?= BASE_URL ?>index.php?module=admin&action=users" style="text-decoration: none;">
+            <div class="card" style="padding: 20px; cursor: pointer; transition: all 0.3s ease; text-align: center;">
+                <i class="fa-solid fa-users" style="font-size: 36px; color: var(--primary-light); margin-bottom: 12px;"></i>
+                <h3 style="color: var(--primary); font-weight: 600; margin-bottom: 4px;">Kelola Pengguna</h3>
+                <p style="color: var(--text-secondary); font-size: 13px; margin: 0;">Kelola hak akses dan profil akun</p>
+            </div>
+        </a>
+
+        <!-- Action 2: Verifikasi Pembayaran -->
         <a href="<?= BASE_URL ?>index.php?module=admin&action=payments" style="text-decoration: none;">
             <div class="card" style="padding: 20px; cursor: pointer; transition: all 0.3s ease; text-align: center;">
                 <i class="fa-solid fa-check-circle" style="font-size: 36px; color: #10b981; margin-bottom: 12px;"></i>
@@ -131,8 +140,8 @@ require_once __DIR__ . '/../../includes/header.php';
             </div>
         </a>
         
-        <!-- Action 2: Kelola Destinasi -->
-        <a href="<?= BASE_URL ?>index.php?module=destinations&action=manage" style="text-decoration: none;">
+        <!-- Action 3: Kelola Destinasi -->
+        <a href="<?= BASE_URL ?>index.php?module=admin&action=destinations" style="text-decoration: none;">
             <div class="card" style="padding: 20px; cursor: pointer; transition: all 0.3s ease; text-align: center;">
                 <i class="fa-solid fa-map-pin" style="font-size: 36px; color: #3b82f6; margin-bottom: 12px;"></i>
                 <h3 style="color: var(--primary); font-weight: 600; margin-bottom: 4px;">Kelola Destinasi</h3>
@@ -140,7 +149,7 @@ require_once __DIR__ . '/../../includes/header.php';
             </div>
         </a>
         
-        <!-- Action 3: Laporan & Analitik -->
+        <!-- Action 4: Laporan & Analitik -->
         <a href="<?= BASE_URL ?>index.php?module=admin&action=reports" style="text-decoration: none;">
             <div class="card" style="padding: 20px; cursor: pointer; transition: all 0.3s ease; text-align: center;">
                 <i class="fa-solid fa-chart-line" style="font-size: 36px; color: #8b5cf6; margin-bottom: 12px;"></i>

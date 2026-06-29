@@ -13,6 +13,9 @@ require_once __DIR__ . '/../../includes/header.php';
         <h2 style="font-weight: 700; color: var(--primary); margin: 0; display: flex; align-items: center; gap: 10px;">
             <i class="fa-solid fa-ticket" style="color: #f59e0b;"></i> Tiket Masuk & Pesanan
         </h2>
+        <a href="<?= BASE_URL ?>index.php?module=pengelola&action=dashboard" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-arrow-left"></i> Dashboard
+        </a>
     </div>
 
     <div style="background-color: #fffbeb; border-left: 4px solid #f59e0b; color: #b45309; padding: 16px; border-radius: 4px; margin-bottom: 24px;">

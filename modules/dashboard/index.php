@@ -4,12 +4,12 @@ $pageTitle = "Beranda Utama";
 
 try {
     // Ambil data metrik ringkasan ekosistem wisata
-    $destCount = db_query("SELECT COUNT(*) as total FROM destinations")->fetch()['total'];
-    $vendorCount = db_query("SELECT COUNT(*) as total FROM vendor_profile")->fetch()['total'];
-    $productCount = db_query("SELECT COUNT(*) as total FROM products")->fetch()['total'];
+    $destCount = db_query("SELECT COUNT(*) as total FROM destinasi")->fetch()['total'];
+    $vendorCount = db_query("SELECT COUNT(*) as total FROM users u JOIN roles r ON u.role_id = r.id WHERE r.nama_role = 'pengelola_wisata'")->fetch()['total'];
+    $productCount = db_query("SELECT COUNT(*) as total FROM paket_wisata")->fetch()['total'];
     
-    // Total pengunjung dari statistik
-    $visitorSum = db_query("SELECT IFNULL(SUM(local_tourists + regional_tourists + foreign_tourists), 0) as total FROM visitor_statistics")->fetch()['total'];
+    // Total pengunjung dari jumlah peserta pesanan yang lunas/selesai
+    $visitorSum = db_query("SELECT IFNULL(SUM(jumlah_peserta), 0) as total FROM pesanan WHERE status IN ('paid', 'completed')")->fetch()['total'];
     
 } catch (PDOException $e) {
     log_error("Dashboard page database error: " . $e->getMessage());
@@ -28,9 +28,6 @@ require_once __DIR__ . '/../../includes/header.php';
         <a href="<?= BASE_URL ?>index.php?module=destinations" class="btn btn-primary" style="background-color: var(--accent); color: white; font-weight: 600;">
             <i class="fa-solid fa-map-marked-alt"></i> Jelajahi Destinasi Wisata
         </a>
-        <a href="<?= BASE_URL ?>index.php?module=reports&action=visitors" class="btn btn-secondary" style="background-color: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255,255,255,0.25);">
-            <i class="fa-solid fa-chart-pie"></i> Lihat Statistik Pengunjung
-        </a>
     </div>
 </div>
 
@@ -42,21 +39,21 @@ require_once __DIR__ . '/../../includes/header.php';
     </div>
     
     <div class="card" style="text-align: center; padding: 24px;">
-        <i class="fa-solid fa-store" style="font-size: 32px; color: var(--accent); margin-bottom: 12px;"></i>
+        <i class="fa-solid fa-handshake" style="font-size: 32px; color: var(--accent); margin-bottom: 12px;"></i>
         <h2 style="font-size: 28px; font-weight: 700; color: var(--primary);"><?= number_format($vendorCount) ?></h2>
-        <p style="color: var(--text-secondary); font-size: 14px; font-weight: 500;">Vendor Lokal Aktif</p>
+        <p style="color: var(--text-secondary); font-size: 14px; font-weight: 500;">Mitra Pengelola Wisata</p>
     </div>
     
     <div class="card" style="text-align: center; padding: 24px;">
-        <i class="fa-solid fa-cubes" style="font-size: 32px; color: var(--accent); margin-bottom: 12px;"></i>
+        <i class="fa-solid fa-suitcase" style="font-size: 32px; color: var(--accent); margin-bottom: 12px;"></i>
         <h2 style="font-size: 28px; font-weight: 700; color: var(--primary);"><?= number_format($productCount) ?></h2>
-        <p style="color: var(--text-secondary); font-size: 14px; font-weight: 500;">Katalog Layanan & Jasa</p>
+        <p style="color: var(--text-secondary); font-size: 14px; font-weight: 500;">Paket Wisata Pilihan</p>
     </div>
     
     <div class="card" style="text-align: center; padding: 24px;">
         <i class="fa-solid fa-users" style="font-size: 32px; color: var(--accent); margin-bottom: 12px;"></i>
         <h2 style="font-size: 28px; font-weight: 700; color: var(--primary);"><?= number_format($visitorSum) ?></h2>
-        <p style="color: var(--text-secondary); font-size: 14px; font-weight: 500;">Kunjungan Wisatawan</p>
+        <p style="color: var(--text-secondary); font-size: 14px; font-weight: 500;">Wisatawan Terlayani</p>
     </div>
 </div>
 

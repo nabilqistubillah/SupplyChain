@@ -31,8 +31,8 @@
                 
                 <!-- Quick Menu by Role -->
                 <?php if ($_SESSION['role'] === 'admin'): ?>
-                    <a href="<?= BASE_URL ?>index.php?module=destinations&action=manage" class="btn btn-secondary" style="padding: 6px 12px; font-size: 12px; color: var(--primary);">
-                        <i class="fa-solid fa-gears"></i> Kelola Wisata
+                    <a href="<?= BASE_URL ?>index.php?module=admin&action=dashboard" class="btn btn-secondary" style="padding: 6px 12px; font-size: 12px; color: var(--primary);">
+                        <i class="fa-solid fa-shield-halved"></i> Portal Admin
                     </a>
                 <?php elseif ($_SESSION['role'] === 'vendor'): ?>
                     <a href="<?= BASE_URL ?>index.php?module=vendors&action=products" class="btn btn-secondary" style="padding: 6px 12px; font-size: 12px; color: var(--primary);">
